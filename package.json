@@ -1,0 +1,35 @@
+{
+  "name": "stack-queue-exercises",
+  "version": "1.0.0",
+  "description": "Exercises for learning Stack and Queue data structures in TypeScript",
+  "keywords": [
+    "stack",
+    "queue",
+    "data-structures",
+    "typescript",
+    "exercises"
+  ],
+  "author": "Laszlo Horvath - lhorvath.com",
+  "license": "ISC",
+  "scripts": {
+    "exercise": "rimraf stack/stack.ts stack/stack-with-array.ts queue/queue.ts queue/queue-with-array.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:stack": "jest stack/stack.spec.ts",
+    "test:queue": "jest queue/queue.spec.ts",
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.11",
+    "@types/node": "20.10.6",
+    "@typescript-eslint/eslint-plugin": "6.17.0",
+    "@typescript-eslint/parser": "6.17.0",
+    "eslint": "8.56.0",
+    "jest": "29.7.0",
+    "rimraf": "5.0.5",
+    "ts-jest": "29.1.1",
+    "typescript": "5.3.3"
+  }
+}
